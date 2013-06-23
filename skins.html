@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+		<title>The Diamond Central</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+
+	<body>
+		<div class="header">
+			<span class="title">The Diamond Central</span>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="skins.html">Skins</a></li>
+				<li><a href="videos.html">Videos</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="content">
+				<input placeholder="Search skins" type="text" id="q" onkeyup="search();" autocomplete="off">
+				
+				<script>
+					function inArray(needle, haystack) {
+						var length = haystack.length;
+						for(var i = 0; i < length; i++) {
+							if(haystack[i] == needle) return true;
+						}
+						return false;
+					}
+					
+					var skins = ['DCX','Nerd','Teacher'];
+					
+					function search() {
+						var q = document.getElementById('q').value;
+						var result = document.getElementById('s_result');
+						
+						document.getElementById('s').innerHTML = 'You searched for "' + q + '"';
+						
+						if (inArray(q,skins)) {
+							result.innerHTML = 'found';
+						} else {
+							result.innerHTML = 'not found :(';
+						}
+					}
+				</script>
+				
+				<span id="s"></span>
+				<div id="s_result"></div>
+				
+				<table class="skintable">
+					<tr>
+						<th>Name</th>
+						<th>Creator</th>
+						<th>Preview</th>
+						<th>Download</th>
+						<th>Change my skin! :D</th>
+					</tr>
+					<tr>
+						<td>Bikini</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Bikini">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Bikini.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Bikini.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Clown</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Clown">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Clown.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Clown.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>DCX</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=DCX">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCX.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCX.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>DCX Army Skin</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=DCX Army Skin">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCXArmySkin.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCXArmySkin.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>DCX Army Skin 2</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=DCX Army Skin 2">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCXArmySkin2.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCXArmySkin2.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>DCX Army Skin 3</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=DCX Army Skin 3">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCXArmySkin3.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCXArmySkin3.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>DCX Biz Dud</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=DCX Biz Dud">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCXBizDud.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/DCXBizDud.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Happy Face</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Happy Face">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/HappyFace.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/HappyFace.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Jesus</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Jesus">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Jesus.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Jesus.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Kitteh</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Kitteh">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Kitteh.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Kitteh.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Nerd</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Nerd">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Nerd.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Nerd.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Purple King</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Purple King">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/PurpleKing.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/PurpleKing.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Sad Face</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Sad Face">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/SadFace.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/SadFace.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Solider</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Solider">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Solider.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Solider.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Tarzan</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Tarzan">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Tarzan.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Tarzan.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Teacher</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Teacher">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Teacher.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/Teacher.png">Change now</a></td>
+					</tr>
+					<tr>
+						<td>Troll Solider</td>
+						<td>T_Tyson</td>
+						<td><a href="skin.html?skin=Troll Solider">Preview</a></td>
+						<td><a target="_blank" href="https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/TrollSolider.png">Download</a></td>
+						<td><a target="_blank" href="https://minecraft.net/profile/skin/remote?url=https://dl.dropboxusercontent.com/u/67686172/dcx/img/skindl/TrollSolider.png">Change now</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="sidebar">
+				Remember to do all that "social" stuff :D
+				<!-- YT Subscribe -->
+				<iframe id="fr" src="http://www.youtube.com/subscribe_widget?p=DiamondCentralX" style="overflow:hidden;height:105px;width:100%;border:0;" scrolling="no" frameBorder="0"></iframe>
+				<!-- G+ Badge -->
+				<div class="g-plus" style="width:350px;" data-href="//plus.google.com/111164930566287212090" data-rel="publisher"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">Copyright (C) 2013 <a class="copyright_link" target="_blank" href="http://www.youtube.com/DiamondCentralX">The Diamond Central</a>. All rights reserved.</div>
+		
+		<div class="bb"></div>
+		
+		<!-- G+ Badge thingy :D -->
+		<script type="text/javascript">
+		  (function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-41862960-1', 'dropboxusercontent.com');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

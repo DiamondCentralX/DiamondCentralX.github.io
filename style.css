@@ -1,0 +1,224 @@
+@font-face {
+	font-family:Minecraftia;
+	src:url(Minecraftia.ttf);
+}
+
+body {
+	background:url(img/epicbg.png) fixed repeat-x, url(img/bg.png) fixed;
+	margin:0;
+	padding:0;
+	font-size:12px;
+	color:#000;
+	font-family:"Minecraftia";
+}
+
+a {
+	color:blue;
+}
+
+.skinviewer {
+	border:none;
+	width:400px;
+	height:400px;
+}
+
+.bb {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:256px;
+	background:url(img/epicbbg.png);
+	z-index:-1;
+}
+
+.header {
+	width:1200px;
+	margin:100px auto 15px;
+	padding:5px 10px;
+	background:#fff;
+	box-shadow:0 0 5px #000;
+	
+	background:url(img/dcx.png) right no-repeat, #fff;
+}
+
+.header .title {
+	font-size:50px;
+}
+
+.main {
+	width:1220px;
+	margin:10px auto;
+}
+
+.nav {
+	width:1220px;
+	margin:15px auto;
+	padding:0;
+	background:#fff;
+	box-shadow:0 0 5px #000;
+}
+
+.nav ul {
+	margin:0;
+	padding:0;
+}
+
+.nav ul li {
+	display:inline-block;
+}
+
+.nav ul li a {
+	display:block;
+	padding:5px 10px;
+	color:blue;
+	text-decoration:none;
+}
+
+.nav ul li a:hover {
+	background:#ccc;
+}
+
+.nav ul li a.active {
+	background:#ccc;
+}
+
+.content {
+	width:800px;
+	margin:0 10px 0 auto;
+	padding:5px 10px;
+	background:#fff;
+	box-shadow:0 0 5px #000;
+	float:left;
+}
+
+.content .pagetitle {
+	margin:0;
+}
+
+.sidebar {
+	width:350px;
+	margin:0 auto 0 15px;
+	padding:5px 10px;
+	background:#fff;
+	box-shadow:0 0 5px #000;
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+.footer {
+	width:1200px;
+	margin:15px auto;
+	padding:5px 10px;
+	background:#fff;
+	box-shadow:0 0 5px #000;
+}
+
+.footer .copyright_link {
+	color:blue;
+	text-decoration:none;
+}
+
+.skintable tr th,
+.skintable tr td {
+	padding:3px 15px;
+	height:30px;
+}
+
+.skintable tr td:nth-child(3),
+.skintable tr td:nth-child(4),
+.skintable tr td:nth-child(5) {
+	text-align:center;
+}
+
+/*.skintable tr:hover td {
+	background:rgba(0,0,0,.3);
+}*/
+
+.skintable tr td a {
+	padding:6px 15px;
+	background:#1B7AE0;
+	color:#fff;
+	text-decoration:none;
+}
+
+.skintable tr td a:hover {
+	background:#E03F1B;
+}
+
+.skintable tr td a:active {
+	background:#E01B1B;
+}
+
+#videos {
+	
+}
+
+#videos .vid {
+	display:inline-block;
+	width:266px;
+	margin-top:20px;
+}
+
+#videos .vid a {
+	color:#000;
+	text-decoration:none;
+}
+
+#videos .vid:hover .title {
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+#videos .vid .thumbcontainer {
+	position:relative;
+	left:0;
+	top:0;
+	
+}
+
+#videos .vid .thumbcontainer .thumb {
+	position:relative;
+	top:0;
+	left:0;
+	width:266px;
+}
+
+#videos .vid .thumbcontainer .play {
+	position:absolute;
+	top:0;
+	right:0;
+	width:50px;
+	background:rgba(255,255,255,.5);
+}
+
+#videos .vid .thumbcontainer .lenght {
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:3px;
+	background:rgba(255,255,255,.5);
+}
+
+#videos .vid .thumbcontainer .views {
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding:3px;
+	background:rgba(255,255,255,.5);
+}
+
+.video .views {
+	float:right;
+}
+
+.video .desc h3 {
+	float:left;
+}
+
+.clear {
+	clear:both;
+}
